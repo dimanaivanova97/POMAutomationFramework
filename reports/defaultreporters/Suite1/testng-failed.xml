@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite1]">
+  <test thread-count="5" parallel="classes" name="SmokeTestsSuite(failed)">
+    <classes>
+      <class name="pomscripts.SmokeTests">
+        <methods>
+          <include name="registerTest"/>
+          <include name="tearDown"/>
+          <include name="likePost"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- pomscripts.SmokeTests -->
+    </classes>
+  </test> <!-- SmokeTestsSuite(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -4,7 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
 import utils.Screenshot;
@@ -22,6 +22,8 @@ public class BaseTest {
     DefaultPageAfterLogin defaultPageAfterLogin;
     SignUpPage signUpPage;
     PostModalWindow postModalWindow;
+    UsersProfilePage usersProfilePage;
+    MyProfilePage myProfilePage;
 
     @BeforeMethod
     public void setUp(){
@@ -36,9 +38,11 @@ public class BaseTest {
         defaultPageAfterLogin = new DefaultPageAfterLogin(driver);
         signUpPage = new SignUpPage(driver);
         postModalWindow = new PostModalWindow(driver);
+        usersProfilePage = new UsersProfilePage(driver);
+        myProfilePage = new MyProfilePage(driver);
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown(ITestResult result){
         if (!result.isSuccess()){
             Screenshot.capture(driver, "screenshots", result.getName());

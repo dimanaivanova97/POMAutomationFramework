@@ -29,4 +29,8 @@ public class DefaultPage extends BasePage{
     public void clickHomeLink() {
         driver.findElement(homeLink).click();
     }
+
+    By userLink = By.xpath("//div[@class='col-12 offset-md-1 col-md-10 offset-lg-3 col-lg-6 ng-star-inserted'][1]//a[@class='post-user']");
+
+    public void clickOnUsersLink(){ driver.findElement(userLink).click(); }
 }

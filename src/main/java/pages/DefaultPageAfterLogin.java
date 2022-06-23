@@ -14,6 +14,7 @@ public class DefaultPageAfterLogin extends BasePage{
     By newPostLink = By.id("nav-link-new-post");
     By logOutIcon = By.xpath("//i [@class='fas fa-sign-out-alt fa-lg']");
     By openPost = By.xpath("//div[@class='post-feed-img']//img[1]");
+    By myProfile = By.id("nav-link-profile");
 
     public void clickNewPostLink(){
         driver.findElement(newPostLink).click();
@@ -23,6 +24,10 @@ public class DefaultPageAfterLogin extends BasePage{
     }
     public void openPost(){
         driver.findElement(openPost).click();
+    }
+
+    public void clickProfileLink(){
+        driver.findElement(myProfile).click();
     }
 }
 

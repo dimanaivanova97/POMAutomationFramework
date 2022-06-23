@@ -15,7 +15,7 @@ public class PostModalWindow extends BasePage{
     By deletePostButton = By.xpath("//label[@class='delete-ask']");
     By userPostNavigationProfile = By.xpath("//div[@class='modal-content']//a[@class='post-user']");
     By commentField = By.xpath("//input[@placeholder='Comment here']");
-    By followUserButton = By.xpath("//button[@class='btn btn-primary ng-star-inserted']");
+    By followUserButton = By.xpath("//div[@class='modal-content']//button[@class='btn btn-primary ng-star-inserted']");
 
     public void clickLikePostButton(){
         driver.findElement(likePostButton).click();
@@ -31,6 +31,9 @@ public class PostModalWindow extends BasePage{
     }
     public void clickUserOfPostNavigationToProfile(){
         driver.findElement(userPostNavigationProfile).click();
+    }
+    public void clickFollowUser() {
+        driver.findElement(followUserButton).click();
     }
 
     public void setComment(String comment) {
