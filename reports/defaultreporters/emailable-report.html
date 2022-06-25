@@ -9,73 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite1</th></tr>
-<tr><td><a href="#t0">SmokeTestsSuite</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">114 344</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SmokeTestsSuite</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">85 066</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTestsSuite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">pomscripts.SmokeTests</td><td><a href="#m0">likePost</a></td><td rowspan="1">1656018710780</td><td rowspan="1">25877</td></tr><tr class="failedeven"><td><a href="#m1">registerTest</a></td><td rowspan="1">1656018679429</td><td rowspan="1">24619</td></tr><tr><th colspan="4">SmokeTestsSuite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">pomscripts.SmokeTests</td><td><a href="#m2">dislikePost</a></td><td rowspan="1">1656018738098</td><td rowspan="1">5237</td></tr><tr class="passedeven"><td><a href="#m3">followUser</a></td><td rowspan="1">1656018744404</td><td rowspan="1">5440</td></tr><tr class="passedeven"><td><a href="#m4">followersModal</a></td><td rowspan="1">1656018764146</td><td rowspan="1">6638</td></tr><tr class="passedeven"><td><a href="#m5">followingsModal</a></td><td rowspan="1">1656018771879</td><td rowspan="1">5123</td></tr><tr class="passedeven"><td><a href="#m6">logOut</a></td><td rowspan="1">1656018786088</td><td rowspan="1">5480</td></tr><tr class="passedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1656018705290</td><td rowspan="1">4440</td></tr><tr class="passedeven"><td><a href="#m8">modifyProfileInfo</a></td><td rowspan="1">1656018778056</td><td rowspan="1">6970</td></tr><tr class="passedeven"><td><a href="#m9">navigateToMyProfile</a></td><td rowspan="1">1656018757586</td><td rowspan="1">5519</td></tr><tr class="passedeven"><td><a href="#m10">navigateToUsersProfile</a></td><td rowspan="1">1656018750922</td><td rowspan="1">5601</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTestsSuite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">pomscripts.SmokeTests</td><td><a href="#m0">dislikePost</a></td><td rowspan="1">1656185192591</td><td rowspan="1">6100</td></tr><tr class="passedeven"><td><a href="#m1">followUnfollowUser</a></td><td rowspan="1">1656185199973</td><td rowspan="1">7171</td></tr><tr class="passedeven"><td><a href="#m2">followersModal</a></td><td rowspan="1">1656185221587</td><td rowspan="1">4562</td></tr><tr class="passedeven"><td><a href="#m3">followingsModal</a></td><td rowspan="1">1656185228160</td><td rowspan="1">8177</td></tr><tr class="passedeven"><td><a href="#m4">likePost</a></td><td rowspan="1">1656185186695</td><td rowspan="1">4604</td></tr><tr class="passedeven"><td><a href="#m5">logOut</a></td><td rowspan="1">1656185244352</td><td rowspan="1">3902</td></tr><tr class="passedeven"><td><a href="#m6">loginTest</a></td><td rowspan="1">1656185182357</td><td rowspan="1">3250</td></tr><tr class="passedeven"><td><a href="#m7">modifyProfileInfo</a></td><td rowspan="1">1656185237436</td><td rowspan="1">5827</td></tr><tr class="passedeven"><td><a href="#m8">navigateToMyProfile</a></td><td rowspan="1">1656185216144</td><td rowspan="1">4349</td></tr><tr class="passedeven"><td><a href="#m9">navigateToUsersProfile</a></td><td rowspan="1">1656185208191</td><td rowspan="1">6596</td></tr><tr class="passedeven"><td><a href="#m10">registerAlreadyCreatedUser</a></td><td rowspan="1">1656185167109</td><td rowspan="1">14130</td></tr></tbody>
 </table>
-<h2>SmokeTestsSuite</h2><h3 id="m0">pomscripts.SmokeTests#likePost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;like far fa-heart fa-2x&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class=&apos;like far fa-heart fa-2x&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pomscripts.SmokeTests.likePost(SmokeTests.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">pomscripts.SmokeTests#registerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[formcontrolname=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname=&apos;password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at pages.SignUpPage.inputPassword(SignUpPage.java:37)
-	at pages.SignUpPage.registerUser(SignUpPage.java:49)
-	at pomscripts.SmokeTests.registerTest(SmokeTests.java:16)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">pomscripts.SmokeTests#dislikePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">pomscripts.SmokeTests#followUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">pomscripts.SmokeTests#followersModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">pomscripts.SmokeTests#followingsModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">pomscripts.SmokeTests#logOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">pomscripts.SmokeTests#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">pomscripts.SmokeTests#modifyProfileInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">pomscripts.SmokeTests#navigateToMyProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">pomscripts.SmokeTests#navigateToUsersProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SmokeTestsSuite</h2><h3 id="m0">pomscripts.SmokeTests#dislikePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pomscripts.SmokeTests#followUnfollowUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pomscripts.SmokeTests#followersModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pomscripts.SmokeTests#followingsModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pomscripts.SmokeTests#likePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">pomscripts.SmokeTests#logOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">pomscripts.SmokeTests#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">pomscripts.SmokeTests#modifyProfileInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">pomscripts.SmokeTests#navigateToMyProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">pomscripts.SmokeTests#navigateToUsersProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">pomscripts.SmokeTests#registerAlreadyCreatedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

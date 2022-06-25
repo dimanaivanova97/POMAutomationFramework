@@ -5,9 +5,10 @@
     <classes>
       <class name="pomscripts.SmokeTests">
         <methods>
-          <include name="registerTest"/>
+          <include name="makePostsPrivate"/>
+          <include name="makePostsPublic"/>
+          <include name="followingsModal"/>
           <include name="tearDown"/>
-          <include name="likePost"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- pomscripts.SmokeTests -->

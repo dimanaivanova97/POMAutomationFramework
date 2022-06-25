@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SmokeTestsSuite</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 24 00:11:17 EEST 2022</td>
+<td>Started on:</td><td>Sat Jun 25 22:26:03 EEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>114 seconds (114344 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85066 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,166 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='pomscripts.SmokeTests.likePost()'><b>likePost</b><br>Test class: pomscripts.SmokeTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;like far fa-heart fa-2x&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class=&apos;like far fa-heart fa-2x&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pomscripts.SmokeTests.likePost(SmokeTests.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1772256805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1772256805'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;like far fa-heart fa-2x&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class=&apos;like far fa-heart fa-2x&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pomscripts.SmokeTests.likePost(SmokeTests.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>25</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-<tr>
-<td title='pomscripts.SmokeTests.registerTest()'><b>registerTest</b><br>Test class: pomscripts.SmokeTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[formcontrolname=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname=&apos;password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at pages.SignUpPage.inputPassword(SignUpPage.java:37)
-	at pages.SignUpPage.registerUser(SignUpPage.java:49)
-	at pomscripts.SmokeTests.registerTest(SmokeTests.java:16)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735819642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1735819642'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[formcontrolname=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname=&apos;password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at pages.SignUpPage.inputPassword(SignUpPage.java:37)
-	at pages.SignUpPage.registerUser(SignUpPage.java:49)
-	at pomscripts.SmokeTests.registerTest(SmokeTests.java:16)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>24</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -237,48 +77,58 @@ Session ID: 6869db1bf7402746025e563357f08c2c
 <tr>
 <td title='pomscripts.SmokeTests.dislikePost()'><b>dislikePost</b><br>Test class: pomscripts.SmokeTests</td>
 <td></td>
-<td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-<tr>
-<td title='pomscripts.SmokeTests.modifyProfileInfo()'><b>modifyProfileInfo</b><br>Test class: pomscripts.SmokeTests</td>
-<td></td>
 <td>6</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
 <tr>
-<td title='pomscripts.SmokeTests.navigateToUsersProfile()'><b>navigateToUsersProfile</b><br>Test class: pomscripts.SmokeTests</td>
+<td title='pomscripts.SmokeTests.followUnfollowUser()'><b>followUnfollowUser</b><br>Test class: pomscripts.SmokeTests</td>
 <td></td>
-<td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-<tr>
-<td title='pomscripts.SmokeTests.followUser()'><b>followUser</b><br>Test class: pomscripts.SmokeTests</td>
-<td></td>
-<td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-<tr>
-<td title='pomscripts.SmokeTests.navigateToMyProfile()'><b>navigateToMyProfile</b><br>Test class: pomscripts.SmokeTests</td>
-<td></td>
-<td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
-<tr>
-<td title='pomscripts.SmokeTests.followingsModal()'><b>followingsModal</b><br>Test class: pomscripts.SmokeTests</td>
-<td></td>
-<td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
+<td>7</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
 <tr>
 <td title='pomscripts.SmokeTests.followersModal()'><b>followersModal</b><br>Test class: pomscripts.SmokeTests</td>
 <td></td>
-<td>6</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
+<td>4</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
 <tr>
-<td title='pomscripts.SmokeTests.loginTest()'><b>loginTest</b><br>Test class: pomscripts.SmokeTests</td>
+<td title='pomscripts.SmokeTests.likePost()'><b>likePost</b><br>Test class: pomscripts.SmokeTests</td>
 <td></td>
 <td>4</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
 <tr>
 <td title='pomscripts.SmokeTests.logOut()'><b>logOut</b><br>Test class: pomscripts.SmokeTests</td>
 <td></td>
+<td>3</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.navigateToUsersProfile()'><b>navigateToUsersProfile</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
+<td>6</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.modifyProfileInfo()'><b>modifyProfileInfo</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
 <td>5</td>
-<td>pomscripts.SmokeTests@27d5a580</td></tr>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.followingsModal()'><b>followingsModal</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
+<td>8</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.navigateToMyProfile()'><b>navigateToMyProfile</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
+<td>4</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.registerAlreadyCreatedUser()'><b>registerAlreadyCreatedUser</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
+<td>14</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
+<tr>
+<td title='pomscripts.SmokeTests.loginTest()'><b>loginTest</b><br>Test class: pomscripts.SmokeTests</td>
+<td></td>
+<td>3</td>
+<td>pomscripts.SmokeTests@3e6f3f28</td></tr>
 </table><p>
 </body>
 </html>

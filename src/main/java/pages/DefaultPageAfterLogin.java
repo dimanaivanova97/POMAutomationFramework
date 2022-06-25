@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**The page that is opened after the User logged in */
 
@@ -25,9 +26,20 @@ public class DefaultPageAfterLogin extends BasePage{
     public void openPost(){
         driver.findElement(openPost).click();
     }
-
     public void clickProfileLink(){
         driver.findElement(myProfile).click();
+    }
+
+    public WebElement getNewPostLink() {
+        return driver.findElement(newPostLink);
+    }
+
+    public WebElement getLogOutIcon() {
+        return driver.findElement(logOutIcon);
+    }
+
+    public WebElement getMyProfile() {
+        return driver.findElement(myProfile);
     }
 }
 

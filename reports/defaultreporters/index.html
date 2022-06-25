@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite1" class="navigator-link">
-              <span class="suite-name border-failed">Suite1</span>
+              <span class="suite-name border-passed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
-                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite1">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="likePost">likePost</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="registerTest">registerTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite1 -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,7 +109,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="followUser">followUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="followUnfollowUser">followUnfollowUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +120,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="followingsModal">followingsModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="likePost">likePost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -166,6 +152,11 @@
                         <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="navigateToUsersProfile">navigateToUsersProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="pomscripts.SmokeTests" class="method navigator-link" hash-for-method="registerAlreadyCreatedUser">registerAlreadyCreatedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
                   </li>
                 </ul>
@@ -178,85 +169,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">pomscripts.SmokeTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="likePost">
-                  </a> <!-- likePost -->
-                  <span class="method-name">likePost</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;like far fa-heart fa-2x&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class=&apos;like far fa-heart fa-2x&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at pomscripts.SmokeTests.likePost(SmokeTests.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerTest">
-                  </a> <!-- registerTest -->
-                  <span class="method-name">registerTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[formcontrolname=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;MBGNW0287&apos;, ip: &apos;192.168.100.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname=&apos;password&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at pages.SignUpPage.inputPassword(SignUpPage.java:37)
-	at pages.SignUpPage.registerUser(SignUpPage.java:49)
-	at pomscripts.SmokeTests.registerTest(SmokeTests.java:16)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-failed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -272,9 +184,9 @@ Session ID: 6869db1bf7402746025e563357f08c2c
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="followUser">
-                  </a> <!-- followUser -->
-                  <span class="method-name">followUser</span>
+                  <a name="followUnfollowUser">
+                  </a> <!-- followUnfollowUser -->
+                  <span class="method-name">followUnfollowUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -289,6 +201,13 @@ Session ID: 6869db1bf7402746025e563357f08c2c
                   <a name="followingsModal">
                   </a> <!-- followingsModal -->
                   <span class="method-name">followingsModal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePost">
+                  </a> <!-- likePost -->
+                  <span class="method-name">likePost</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -324,6 +243,13 @@ Session ID: 6869db1bf7402746025e563357f08c2c
                   <a name="navigateToUsersProfile">
                   </a> <!-- navigateToUsersProfile -->
                   <span class="method-name">navigateToUsersProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerAlreadyCreatedUser">
+                  </a> <!-- registerAlreadyCreatedUser -->
+                  <span class="method-name">registerAlreadyCreatedUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -382,49 +308,49 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'likePost')
+data.setCell(0, 1, 'registerAlreadyCreatedUser')
 data.setCell(0, 2, 'pomscripts.SmokeTests')
-data.setCell(0, 3, 25877);
+data.setCell(0, 3, 14130);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerTest')
+data.setCell(1, 1, 'followingsModal')
 data.setCell(1, 2, 'pomscripts.SmokeTests')
-data.setCell(1, 3, 24619);
+data.setCell(1, 3, 8177);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'modifyProfileInfo')
+data.setCell(2, 1, 'followUnfollowUser')
 data.setCell(2, 2, 'pomscripts.SmokeTests')
-data.setCell(2, 3, 6970);
+data.setCell(2, 3, 7171);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'followersModal')
+data.setCell(3, 1, 'navigateToUsersProfile')
 data.setCell(3, 2, 'pomscripts.SmokeTests')
-data.setCell(3, 3, 6638);
+data.setCell(3, 3, 6596);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'navigateToUsersProfile')
+data.setCell(4, 1, 'dislikePost')
 data.setCell(4, 2, 'pomscripts.SmokeTests')
-data.setCell(4, 3, 5601);
+data.setCell(4, 3, 6100);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'navigateToMyProfile')
+data.setCell(5, 1, 'modifyProfileInfo')
 data.setCell(5, 2, 'pomscripts.SmokeTests')
-data.setCell(5, 3, 5519);
+data.setCell(5, 3, 5827);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'logOut')
+data.setCell(6, 1, 'likePost')
 data.setCell(6, 2, 'pomscripts.SmokeTests')
-data.setCell(6, 3, 5480);
+data.setCell(6, 3, 4604);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'followUser')
+data.setCell(7, 1, 'followersModal')
 data.setCell(7, 2, 'pomscripts.SmokeTests')
-data.setCell(7, 3, 5440);
+data.setCell(7, 3, 4562);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'dislikePost')
+data.setCell(8, 1, 'navigateToMyProfile')
 data.setCell(8, 2, 'pomscripts.SmokeTests')
-data.setCell(8, 3, 5237);
+data.setCell(8, 3, 4349);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'followingsModal')
+data.setCell(9, 1, 'logOut')
 data.setCell(9, 2, 'pomscripts.SmokeTests')
-data.setCell(9, 3, 5123);
+data.setCell(9, 3, 3902);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'loginTest')
 data.setCell(10, 2, 'pomscripts.SmokeTests')
-data.setCell(10, 3, 4440);
+data.setCell(10, 3, 3250);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
@@ -461,136 +387,132 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">registerTest</span>
-                <span class="method-start">2076 ms</span>
+                <span class="method-name">registerAlreadyCreatedUser</span>
+                <span class="method-start">3763 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=registerTest status=FAILURE method=SmokeTests.registerTest()[pri:1, instance:pomscr...)</span>
-                <span class="method-start">26703 ms</span>
+                <span class="method-name">tearDown([TestResult name=registerAlreadyCreatedUser status=SUCCESS method=SmokeTests.registerAlreadyCreatedU...)</span>
+                <span class="method-start">17895 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26976 ms</span>
+                <span class="method-start">17986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">27937 ms</span>
+                <span class="method-start">19011 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=SmokeTests.loginTest()[pri:2, instance:pomscripts.S...)</span>
-                <span class="method-start">32378 ms</span>
+                <span class="method-start">22262 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32471 ms</span>
+                <span class="method-start">22408 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">likePost</span>
-                <span class="method-start">33427 ms</span>
+                <span class="method-start">23349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=likePost status=FAILURE method=SmokeTests.likePost()[pri:3, instance:pomscripts.Smo...)</span>
-                <span class="method-start">59307 ms</span>
+                <span class="method-name">tearDown([TestResult name=likePost status=SUCCESS method=SmokeTests.likePost()[pri:3, instance:pomscripts.Smo...)</span>
+                <span class="method-start">27954 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">59780 ms</span>
+                <span class="method-start">28070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dislikePost</span>
-                <span class="method-start">60745 ms</span>
+                <span class="method-start">29245 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=dislikePost status=SUCCESS method=SmokeTests.dislikePost()[pri:4, instance:pomscrip...)</span>
-                <span class="method-start">65982 ms</span>
+                <span class="method-start">35346 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66108 ms</span>
+                <span class="method-start">35530 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">followUser</span>
-                <span class="method-start">67051 ms</span>
+                <span class="method-name">followUnfollowUser</span>
+                <span class="method-start">36627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=followUser status=SUCCESS method=SmokeTests.followUser()[pri:5, instance:pomscripts...)</span>
-                <span class="method-start">72492 ms</span>
+                <span class="method-name">tearDown([TestResult name=followUnfollowUser status=SUCCESS method=SmokeTests.followUnfollowUser()[pri:5, ins...)</span>
+                <span class="method-start">43798 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">72615 ms</span>
+                <span class="method-start">43915 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateToUsersProfile</span>
-                <span class="method-start">73569 ms</span>
+                <span class="method-start">44845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=navigateToUsersProfile status=SUCCESS method=SmokeTests.navigateToUsersProfile()[pr...)</span>
-                <span class="method-start">79170 ms</span>
+                <span class="method-start">51442 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">79264 ms</span>
+                <span class="method-start">51552 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateToMyProfile</span>
-                <span class="method-start">80233 ms</span>
+                <span class="method-start">52798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=navigateToMyProfile status=SUCCESS method=SmokeTests.navigateToMyProfile()[pri:7, i...)</span>
-                <span class="method-start">85752 ms</span>
+                <span class="method-start">57148 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">85849 ms</span>
+                <span class="method-start">57285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">followersModal</span>
-                <span class="method-start">86793 ms</span>
+                <span class="method-start">58241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=followersModal status=SUCCESS method=SmokeTests.followersModal()[pri:8, instance:po...)</span>
-                <span class="method-start">93431 ms</span>
+                <span class="method-start">62804 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">93525 ms</span>
+                <span class="method-start">63678 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">followingsModal</span>
-                <span class="method-start">94526 ms</span>
+                <span class="method-start">64814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=followingsModal status=SUCCESS method=SmokeTests.followingsModal()[pri:9, instance:...)</span>
-                <span class="method-start">99649 ms</span>
+                <span class="method-start">72992 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">99743 ms</span>
+                <span class="method-start">73127 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modifyProfileInfo</span>
-                <span class="method-start">100703 ms</span>
+                <span class="method-start">74090 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=modifyProfileInfo status=SUCCESS method=SmokeTests.modifyProfileInfo()[pri:10, inst...)</span>
-                <span class="method-start">107673 ms</span>
+                <span class="method-start">79917 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">107771 ms</span>
+                <span class="method-start">80055 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">108735 ms</span>
+                <span class="method-start">81006 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=logOut status=SUCCESS method=SmokeTests.logOut()[pri:11, instance:pomscripts.SmokeT...)</span>
-                <span class="method-start">114215 ms</span>
+                <span class="method-start">84908 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

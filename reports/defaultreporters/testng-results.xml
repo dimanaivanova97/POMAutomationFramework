@@ -1,334 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T00:11:17 EEST" name="Suite1" finished-at="2022-06-24T00:13:11 EEST" duration-ms="114344">
+  <suite started-at="2022-06-25T22:26:03 EEST" name="Suite1" finished-at="2022-06-25T22:27:28 EEST" duration-ms="85066">
     <groups>
     </groups>
-    <test started-at="2022-06-24T00:11:17 EEST" name="SmokeTestsSuite" finished-at="2022-06-24T00:13:11 EEST" duration-ms="114344">
+    <test started-at="2022-06-25T22:26:03 EEST" name="SmokeTestsSuite" finished-at="2022-06-25T22:27:28 EEST" duration-ms="85066">
       <class name="pomscripts.SmokeTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:17 EEST" name="setUp" finished-at="2022-06-24T00:11:19 EEST" duration-ms="2074" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:03 EEST" name="setUp" finished-at="2022-06-25T22:26:07 EEST" duration-ms="3762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:1, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:19 EEST" name="registerTest" finished-at="2022-06-24T00:11:44 EEST" duration-ms="24619" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[formcontrolname='password']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MBGNW0287', ip: '192.168.100.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname='password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[formcontrolname='password']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MBGNW0287', ip: '192.168.100.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6869db1bf7402746025e563357f08c2c, findElement {using=xpath, value=//input[formcontrolname='password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49514/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6869db1bf7402746025e563357f08c2c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at pages.SignUpPage.inputPassword(SignUpPage.java:37)
-at pages.SignUpPage.registerUser(SignUpPage.java:49)
-at pomscripts.SmokeTests.registerTest(SmokeTests.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="registerAlreadyCreatedUser()[pri:1, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:07 EEST" name="registerAlreadyCreatedUser" finished-at="2022-06-25T22:26:21 EEST" duration-ms="14130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:44 EEST" name="tearDown" finished-at="2022-06-24T00:11:44 EEST" duration-ms="272" status="PASS">
+        </test-method> <!-- registerAlreadyCreatedUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:21 EEST" name="tearDown" finished-at="2022-06-25T22:26:21 EEST" duration-ms="90" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerTest status=FAILURE method=SmokeTests.registerTest()[pri:1, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=registerAlreadyCreatedUser status=SUCCESS method=SmokeTests.registerAlreadyCreatedUser()[pri:1, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:44 EEST" name="setUp" finished-at="2022-06-24T00:11:45 EEST" duration-ms="961" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:21 EEST" name="setUp" finished-at="2022-06-25T22:26:22 EEST" duration-ms="1025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:2, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:45 EEST" name="loginTest" finished-at="2022-06-24T00:11:49 EEST" duration-ms="4440" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:22 EEST" name="loginTest" finished-at="2022-06-25T22:26:25 EEST" duration-ms="3250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:49 EEST" name="tearDown" finished-at="2022-06-24T00:11:49 EEST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:25 EEST" name="tearDown" finished-at="2022-06-25T22:26:25 EEST" duration-ms="145" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SmokeTests.loginTest()[pri:2, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SmokeTests.loginTest()[pri:2, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:49 EEST" name="setUp" finished-at="2022-06-24T00:11:50 EEST" duration-ms="956" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:25 EEST" name="setUp" finished-at="2022-06-25T22:26:26 EEST" duration-ms="941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="likePost()[pri:3, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:11:50 EEST" name="likePost" finished-at="2022-06-24T00:12:16 EEST" duration-ms="25877" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='like far fa-heart fa-2x']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MBGNW0287', ip: '192.168.100.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class='like far fa-heart fa-2x']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='like far fa-heart fa-2x']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'MBGNW0287', ip: '192.168.100.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e2b5ce5bf28fd2da069da6b511e6076, findElement {using=xpath, value=//i[@class='like far fa-heart fa-2x']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\DIMANA~1.IVA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49700/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e2b5ce5bf28fd2da069da6b511e6076
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at pomscripts.SmokeTests.likePost(SmokeTests.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="likePost()[pri:3, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:26 EEST" name="likePost" finished-at="2022-06-25T22:26:31 EEST" duration-ms="4604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- likePost -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:16 EEST" name="tearDown" finished-at="2022-06-24T00:12:17 EEST" duration-ms="472" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:31 EEST" name="tearDown" finished-at="2022-06-25T22:26:31 EEST" duration-ms="114" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=likePost status=FAILURE method=SmokeTests.likePost()[pri:3, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=likePost status=SUCCESS method=SmokeTests.likePost()[pri:3, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:17 EEST" name="setUp" finished-at="2022-06-24T00:12:18 EEST" duration-ms="965" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:31 EEST" name="setUp" finished-at="2022-06-25T22:26:32 EEST" duration-ms="1175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dislikePost()[pri:4, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:18 EEST" name="dislikePost" finished-at="2022-06-24T00:12:23 EEST" duration-ms="5237" status="PASS">
+        <test-method signature="dislikePost()[pri:4, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:32 EEST" name="dislikePost" finished-at="2022-06-25T22:26:38 EEST" duration-ms="6100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dislikePost -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:23 EEST" name="tearDown" finished-at="2022-06-24T00:12:23 EEST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:38 EEST" name="tearDown" finished-at="2022-06-25T22:26:38 EEST" duration-ms="182" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dislikePost status=SUCCESS method=SmokeTests.dislikePost()[pri:4, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=dislikePost status=SUCCESS method=SmokeTests.dislikePost()[pri:4, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:23 EEST" name="setUp" finished-at="2022-06-24T00:12:24 EEST" duration-ms="943" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:38 EEST" name="setUp" finished-at="2022-06-25T22:26:39 EEST" duration-ms="1096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="followUser()[pri:5, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:24 EEST" name="followUser" finished-at="2022-06-24T00:12:29 EEST" duration-ms="5440" status="PASS">
+        <test-method signature="followUnfollowUser()[pri:5, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:39 EEST" name="followUnfollowUser" finished-at="2022-06-25T22:26:47 EEST" duration-ms="7171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- followUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:29 EEST" name="tearDown" finished-at="2022-06-24T00:12:29 EEST" duration-ms="122" status="PASS">
+        </test-method> <!-- followUnfollowUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:47 EEST" name="tearDown" finished-at="2022-06-25T22:26:47 EEST" duration-ms="116" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=followUser status=SUCCESS method=SmokeTests.followUser()[pri:5, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=followUnfollowUser status=SUCCESS method=SmokeTests.followUnfollowUser()[pri:5, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:29 EEST" name="setUp" finished-at="2022-06-24T00:12:30 EEST" duration-ms="954" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:47 EEST" name="setUp" finished-at="2022-06-25T22:26:48 EEST" duration-ms="930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigateToUsersProfile()[pri:6, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:30 EEST" name="navigateToUsersProfile" finished-at="2022-06-24T00:12:36 EEST" duration-ms="5601" status="PASS">
+        <test-method signature="navigateToUsersProfile()[pri:6, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:48 EEST" name="navigateToUsersProfile" finished-at="2022-06-25T22:26:54 EEST" duration-ms="6596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToUsersProfile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:36 EEST" name="tearDown" finished-at="2022-06-24T00:12:36 EEST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:54 EEST" name="tearDown" finished-at="2022-06-25T22:26:54 EEST" duration-ms="109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToUsersProfile status=SUCCESS method=SmokeTests.navigateToUsersProfile()[pri:6, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToUsersProfile status=SUCCESS method=SmokeTests.navigateToUsersProfile()[pri:6, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:36 EEST" name="setUp" finished-at="2022-06-24T00:12:37 EEST" duration-ms="968" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:54 EEST" name="setUp" finished-at="2022-06-25T22:26:56 EEST" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigateToMyProfile()[pri:7, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:37 EEST" name="navigateToMyProfile" finished-at="2022-06-24T00:12:43 EEST" duration-ms="5519" status="PASS">
+        <test-method signature="navigateToMyProfile()[pri:7, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:26:56 EEST" name="navigateToMyProfile" finished-at="2022-06-25T22:27:00 EEST" duration-ms="4349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToMyProfile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:43 EEST" name="tearDown" finished-at="2022-06-24T00:12:43 EEST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:00 EEST" name="tearDown" finished-at="2022-06-25T22:27:00 EEST" duration-ms="136" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToMyProfile status=SUCCESS method=SmokeTests.navigateToMyProfile()[pri:7, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToMyProfile status=SUCCESS method=SmokeTests.navigateToMyProfile()[pri:7, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:43 EEST" name="setUp" finished-at="2022-06-24T00:12:44 EEST" duration-ms="943" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:00 EEST" name="setUp" finished-at="2022-06-25T22:27:01 EEST" duration-ms="956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="followersModal()[pri:8, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:44 EEST" name="followersModal" finished-at="2022-06-24T00:12:50 EEST" duration-ms="6638" status="PASS">
+        <test-method signature="followersModal()[pri:8, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:01 EEST" name="followersModal" finished-at="2022-06-25T22:27:06 EEST" duration-ms="4562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- followersModal -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:50 EEST" name="tearDown" finished-at="2022-06-24T00:12:50 EEST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:06 EEST" name="tearDown" finished-at="2022-06-25T22:27:07 EEST" duration-ms="873" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=followersModal status=SUCCESS method=SmokeTests.followersModal()[pri:8, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=followersModal status=SUCCESS method=SmokeTests.followersModal()[pri:8, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:50 EEST" name="setUp" finished-at="2022-06-24T00:12:51 EEST" duration-ms="1001" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:07 EEST" name="setUp" finished-at="2022-06-25T22:27:08 EEST" duration-ms="1136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="followingsModal()[pri:9, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:51 EEST" name="followingsModal" finished-at="2022-06-24T00:12:57 EEST" duration-ms="5123" status="PASS">
+        <test-method signature="followingsModal()[pri:9, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:08 EEST" name="followingsModal" finished-at="2022-06-25T22:27:16 EEST" duration-ms="8177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- followingsModal -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:57 EEST" name="tearDown" finished-at="2022-06-24T00:12:57 EEST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:16 EEST" name="tearDown" finished-at="2022-06-25T22:27:16 EEST" duration-ms="134" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=followingsModal status=SUCCESS method=SmokeTests.followingsModal()[pri:9, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=followingsModal status=SUCCESS method=SmokeTests.followingsModal()[pri:9, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:57 EEST" name="setUp" finished-at="2022-06-24T00:12:58 EEST" duration-ms="959" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:16 EEST" name="setUp" finished-at="2022-06-25T22:27:17 EEST" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="modifyProfileInfo()[pri:10, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:12:58 EEST" name="modifyProfileInfo" finished-at="2022-06-24T00:13:05 EEST" duration-ms="6970" status="PASS">
+        <test-method signature="modifyProfileInfo()[pri:10, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:17 EEST" name="modifyProfileInfo" finished-at="2022-06-25T22:27:23 EEST" duration-ms="5827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyProfileInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:13:05 EEST" name="tearDown" finished-at="2022-06-24T00:13:05 EEST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:23 EEST" name="tearDown" finished-at="2022-06-25T22:27:23 EEST" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=modifyProfileInfo status=SUCCESS method=SmokeTests.modifyProfileInfo()[pri:10, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=modifyProfileInfo status=SUCCESS method=SmokeTests.modifyProfileInfo()[pri:10, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:13:05 EEST" name="setUp" finished-at="2022-06-24T00:13:06 EEST" duration-ms="963" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:23 EEST" name="setUp" finished-at="2022-06-25T22:27:24 EEST" duration-ms="951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logOut()[pri:11, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:13:06 EEST" name="logOut" finished-at="2022-06-24T00:13:11 EEST" duration-ms="5480" status="PASS">
+        <test-method signature="logOut()[pri:11, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:24 EEST" name="logOut" finished-at="2022-06-25T22:27:28 EEST" duration-ms="3902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@27d5a580]" started-at="2022-06-24T00:13:11 EEST" name="tearDown" finished-at="2022-06-24T00:13:11 EEST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pomscripts.SmokeTests@3e6f3f28]" started-at="2022-06-25T22:27:28 EEST" name="tearDown" finished-at="2022-06-25T22:27:28 EEST" duration-ms="119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logOut status=SUCCESS method=SmokeTests.logOut()[pri:11, instance:pomscripts.SmokeTests@27d5a580] output={null}]]]>
+                <![CDATA[[TestResult name=logOut status=SUCCESS method=SmokeTests.logOut()[pri:11, instance:pomscripts.SmokeTests@3e6f3f28] output={null}]]]>
               </value>
             </param>
           </params>

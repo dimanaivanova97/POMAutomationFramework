@@ -10,16 +10,16 @@ public class SignUpPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath="//input[formcontrolname='username']")
+    @FindBy(xpath="//input[@name='username']")
     WebElement usernameField;
 
-    @FindBy(xpath="//input[formcontrolname='email']")
+    @FindBy(xpath="//input[@formcontrolname='email']")
     WebElement emailField;
 
-    @FindBy(xpath="//input[formcontrolname='password']")
+    @FindBy(xpath="//input[@name='password']")
     WebElement passwordField;
 
-    @FindBy(xpath="//input[formcontrolname='confirmPassword']")
+    @FindBy(xpath="//input[@formcontrolname='confirmPassword']")
     WebElement confirmPasswordField;
 
     @FindBy(id="sign-in-button")
@@ -46,6 +46,7 @@ public class SignUpPage extends BasePage{
     }
 
     public void registerUser(){
+        inputUserName();
         inputPassword();
         inputEmail();
         inputPassword();
